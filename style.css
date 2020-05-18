@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #fa9191;
+    --trim-color: #eb6383;
+    --more-trim: #ffe9c5;
+    --even-more-trim: #b4f2e1;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: var(--more-trim);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 25px 0;
+    height: 50px;
+    width: 100vw;
+    color: var(--trim-color);
+    background-color: var(--main-color);
+    text-shadow: 1px 2px var(--even-more-trim);
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+}
+
+.posting {
+    margin: 0 0 25px 0;
+    text-shadow: 1px 2px var(--main-color);
+}
+
+.image {
+    border: 10px solid var(--main-color);
+    border-radius: 25%;
+}
+
+.imageDiv {
+    border: 10px solid var(--even-more-trim);
+    background-color: var(--even-more-trim);
+    border-radius: 25%;
+}
+
+.dancers {
+    height: 50px;
+    width: 50px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
